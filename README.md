@@ -3,12 +3,15 @@
 Project page for **ImpossibleRubrics: Stress-Testing Generated Rubrics as Reward Signals**.
 
 **[Project page](https://impossiblerubrics.github.io/)** ·
-**[Paper PDF](https://impossiblerubrics.github.io/assets/impossiblerubrics.pdf)**
+**[Paper PDF](https://impossiblerubrics.github.io/assets/impossiblerubrics.pdf)** ·
+**[Code & data](https://github.com/impossiblerubrics/impossible_rubrics)**
 
 Bowen Qin, Yi Xie, Yesheng Liu, and Xi Yang.
 
 Bowen Qin's [personal homepage](https://eyuansu62.github.io/) is linked from the
-author list. The downloadable PDF includes this project's URL on its cover.
+author list. The downloadable PDF includes keywords, links to the project page,
+benchmark Releases and evaluation repository, plus the correspondence address
+`qin.bowen@u.nus.edu` on its first page.
 
 ## Website
 
