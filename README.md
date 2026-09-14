@@ -22,6 +22,9 @@ the full abstract remains in the linked PDF.
 The worked climate-sensitivity example is excerpted from Figures 1–2: the
 rubric gives the honest response 25/100 and the attacker response
 `3` 100/100. The homepage spelling of Yi Xie follows the latest author correction.
+Paper Figure 2 also uses paired answer cards with aligned rubric scores,
+proportional bars and separate certificate verdicts. It highlights the 75-point
+reward advantage of the evidence-violating answer.
 The example follows four stages: the unsupported task demand, model-generated
 rubric, rubric-targeted attack against a fixed honest baseline, and separate
 reward/evidence checks. Stages 3–4 are grouped into paired cards, each containing
