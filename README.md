@@ -19,6 +19,9 @@ This repository contains the static project page and its preprint PDF.
 It is the website source, not the experimental code or dataset release.
 The opening overview condenses the paper's question, method and headline result;
 the full abstract remains in the linked PDF.
+Paper Figure 1 summarizes the evidence-versus-task conflict in two columns.
+Its certificate boundary and source/task identifiers are in the caption, and the
+figure explicitly excludes the certificate from the generator input.
 The worked climate-sensitivity example is excerpted from Figures 1–2: the
 rubric gives the honest response 25/100 and the attacker response
 `3` 100/100. The homepage spelling of Yi Xie follows the latest author correction.
