@@ -22,8 +22,9 @@ the full abstract remains in the linked PDF.
 The worked climate-sensitivity example is excerpted from Figures 1–2: the
 rubric gives the honest response 25/100 and the attacker response
 `3` 100/100. The homepage spelling of Yi Xie follows the latest author correction.
-Paper Figure 2 also uses paired answer cards with aligned rubric scores,
-proportional bars and separate certificate verdicts. It highlights the 75-point
+Paper Figure 2 uses paired cards with a score-first hierarchy: large rubric
+scores and proportional bars, then the answer excerpt and a compact evidence
+verdict. Model roles are listed once, and the card padding separates these layers. It highlights the 75-point
 reward advantage of the evidence-violating answer. The paper figure uses one
 Helvetica-style family (TeX Gyre Heros) for labels, answer text and numbers,
 rendered as vector artwork.
