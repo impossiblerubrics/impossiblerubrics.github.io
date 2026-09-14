@@ -23,6 +23,9 @@ Paper Figure 1 now shows how missing prevention-trial evidence is turned into
 an unsupported 0.0% preventive probability by a generated rubric. Its certificate
 boundary and source/task identifiers are in the caption, and the figure
 explicitly excludes the certificate from the generator input.
+All seven criteria have separate rows and maximum-point values summing to 100;
+grader notes sit below the table and carry no additional points. Full-credit
+rules are summarized, with partial-credit bands omitted from the figure.
 The homepage retains the worked climate-sensitivity benchmark example: the
 rubric gives the honest response 25/100 and the attacker response
 `3` 100/100. The homepage spelling of Yi Xie follows the latest author correction.
