@@ -25,8 +25,8 @@ rubric gives the honest response 25/100 and the attacker response
 Paper Figure 2 uses paired cards with a score-first hierarchy: large rubric
 scores and proportional bars, then the answer excerpt and a compact evidence
 verdict. Model roles are listed once, and the card padding separates these layers. It highlights the 75-point
-reward advantage of the evidence-violating answer. The paper figure uses one
-Helvetica-style family (TeX Gyre Heros) for labels, answer text and numbers,
+reward advantage of the evidence-violating answer. The paper figure inherits
+the manuscript's XCharter font for its labels, answer text and numbers,
 rendered as vector artwork.
 The example follows four stages: the unsupported task demand, model-generated
 rubric, rubric-targeted attack against a fixed honest baseline, and separate
