@@ -55,3 +55,7 @@ python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
 The website uses no external fonts, analytics, or third-party JavaScript.
+
+## 15 September 2026 update
+
+The public NUS PDF and results section include the frozen-answer Oracle sensitivity study. The original leaderboard remains conditional on its fixed evaluation chain; the new comparison covers one generator/attacker condition and does not rank Oracle accuracy.

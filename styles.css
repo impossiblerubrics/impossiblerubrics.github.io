@@ -124,3 +124,9 @@
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
 @media print{.site-header nav,.actions,.citation-toolbar button,.site-footer,.skip-link{display:none}.wrap{width:100%}.hero{padding-top:10px}.paper-section{break-inside:avoid;grid-template-columns:160px 1fr;gap:25px;padding-block:30px}body{font-size:12px}a{color:inherit;text-decoration:none}h1{font-size:40px}h1>span{font-size:25px}}
+
+/* Oracle configurations are comparisons, not a ranking of accuracy. */
+.oracle-table tbody tr:first-child { color: var(--ink); background: transparent; }
+.oracle-table tbody tr:first-child th { font-weight: 400; }
+.oracle-table thead th { white-space: normal; }
+#oracle-sensitivity { margin-top: 32px; margin-bottom: 20px; }

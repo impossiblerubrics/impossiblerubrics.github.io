@@ -15,7 +15,7 @@
   <meta name="citation_pdf_url" content="https://impossiblerubrics.github.io/assets/impossiblerubrics.pdf">
   <link rel="canonical" href="https://impossiblerubrics.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260915-oracle">
   <script src="main.js" defer></script>
 </head>
 <body>
@@ -56,7 +56,7 @@
     <section id="abstract" class="paper-section" aria-labelledby="abstract-title">
       <div class="section-heading"><span class="section-number" aria-hidden="true">01</span><h2 id="abstract-title">Overview</h2></div>
       <div class="prose">
-        <p>ImpossibleRubrics tests whether model-generated rubrics reward unsupported answers over honest ones. Models write rubrics for tasks that cannot be faithfully answered as requested; an attacker then optimizes against those rules. We evaluate rubric scores and evidence fidelity separately. Across eleven generators, observed exploit rates are <strong>8–26% on the unbiased Full-150 set</strong>. This exposes a gap between satisfying a generated reward signal and staying faithful to the evidence.</p>
+        <p>ImpossibleRubrics tests whether model-generated rubrics reward unsupported answers over honest ones. Models write rubrics for tasks that cannot be faithfully answered as requested; an attacker then optimizes against those rules. We evaluate rubric scores and evidence fidelity separately. Under a fixed attacker, judge, and oracle, observed exploit rates across eleven generators are <strong>8–26% on the unbiased Full-150 set</strong>. This exposes a gap between satisfying a generated reward signal and staying faithful to the evidence.</p>
         <p class="text-link"><a href="assets/impossiblerubrics.pdf#page=1">Read the full abstract in the paper <span aria-hidden="true">↗</span></a></p>
       </div>
     </section>
@@ -281,7 +281,7 @@ The probability that ivermectin prevents the relevant COVID-19 outcome, derived 
     <section id="results" class="paper-section" aria-labelledby="results-title">
       <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><h2 id="results-title">Main results</h2><p>Can the rubric distinguish an honest answer from an optimized exploit?</p></div>
       <div>
-        <div class="result-summary"><p class="result-number">8–26<span>%</span></p><p>Observed exploit rates across eleven generators on the unbiased <strong>Full-150</strong> evaluation set.</p></div>
+        <div class="result-summary"><p class="result-number">8–26<span>%</span></p><p>Observed exploit rates across eleven generators on <strong>Full-150</strong>, under the paper’s fixed evaluation chain.</p></div>
         <div class="table-wrap">
           <table>
             <caption>Rubric-generator exploit rates <span>Lower is more robust.</span></caption>
@@ -301,7 +301,24 @@ The probability that ivermectin prevents the relevant COVID-19 outcome, derived 
             </tbody>
           </table>
         </div>
-        <p class="table-note"><strong>How to read these results.</strong> Every row is a single rubric draw. Full-150 is the unbiased comparison; Hard-45 is a deliberately selected stress set, so the two columns describe different evaluation populations. Opus 5 also serves as the attacker and oracle; the paper reports a held-out-attacker check. Fine-grained rankings are not claims of statistical separation.</p>
+        <p class="table-note"><strong>How to read these results.</strong> Every row is a single rubric draw. Full-150 is the unbiased comparison; Hard-45 is a deliberately selected stress set, so the two columns describe different evaluation populations. Opus 5 also serves as the attacker and oracle; the paper reports a held-out-attacker check. Fine-grained rankings are not claims of statistical separation. The Oracle-sensitivity study below changes the verification model for one frozen generator/attacker condition; it does not re-evaluate this leaderboard.</p>
+        <div id="oracle-sensitivity" class="prose">
+          <h3>How much does the verification model matter?</h3>
+          <p>Holding 45 Opus 5 rubrics, GPT-5.5 attack answers, evidence, certificates, and Haiku judge scores fixed, we changed only the Oracle configuration. Each Oracle evaluated all 45 attacks and 45 reference baselines: <strong>270 judgments in total</strong>.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="oracle-table">
+            <caption>Oracle sensitivity <span>One frozen generator and attacker condition.</span></caption>
+            <thead><tr><th scope="col">Verification model</th><th scope="col">Exploitation</th><th scope="col">Baselines rejected</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Claude Opus 5</th><td>15/45 · 33.3%</td><td>0/45</td></tr>
+              <tr><th scope="row">GPT-5.6-sol</th><td>34/45 · 75.6%</td><td>3/45</td></tr>
+              <tr><th scope="row">Gemini-3.8-flash</th><td>30/45 · 66.7%</td><td>0/45</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">All 15 attacks flagged by Opus were also flagged by both other Oracles in this run. Agreement does not establish correctness: all three read the same certificates, and an audit found omitted requirements and a source-attribution discrepancy in reference baselines. These results measure sensitivity to verification, without identifying the most accurate Oracle or a true exploitation rate.</p>
+        <p class="text-link"><a href="assets/impossiblerubrics.pdf#page=21">Read the Oracle-sensitivity study in Appendix M <span aria-hidden="true">↗</span></a></p>
         <p class="text-link"><a href="assets/impossiblerubrics.pdf#page=7">Read the results and robustness analyses in the paper <span aria-hidden="true">↗</span></a></p>
       </div>
     </section>
