@@ -59,3 +59,5 @@ The website uses no external fonts, analytics, or third-party JavaScript.
 ## 15 September 2026 update
 
 The public NUS PDF and results section include the frozen-answer Oracle sensitivity study. The original leaderboard remains conditional on its fixed evaluation chain; the new comparison covers one generator/attacker condition and does not rank Oracle accuracy.
+
+The NUS PDF now uses the reviewed ICLR diagrams for Figures 1 and 2, including their Times typography, compact spacing and neutral panels. The NUS captions and named-author manuscript are retained. The PDF has 21 pages; Appendix M starts on page 20.
